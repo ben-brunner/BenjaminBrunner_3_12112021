@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/112bcd85e3.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/112bcd85e3.js" crossorigin="anonymous"></script>
     <!-- Normalize.css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- CSS Stylesheet -->
@@ -16,10 +13,7 @@
     <!--  Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet" />
 
     <title>OhMyFood</title>
   </head>
@@ -28,76 +22,98 @@
     <!-- Header -->
     <header>
       <nav class="nav">
-        <img
-          class="nav__logo"
-          src="/assets/logo/ohmyfood.png"
-          alt="ohmyfood logo"
-        />
+        <a href="/index.html" class="self-start"><i class="fas fa-arrow-left"></i></a>
+        <img class="nav__logo" src="/assets/logo/ohmyfood.png" alt="ohmyfood logo" />
       </nav>
     </header>
 
-    <main>
-      <!-- Bandeau Localisation -->
-      <section class="location">
-        <i class="fas fa-map-marker-alt"></i>
-        <span class="location__text">Paris, Belleville</span>
-      </section>
+    <main class="main--grey">
+      <!-- Hero Image -->
+      <img class="hero_img" src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat dans assiette" />
 
-      <!-- Hero Banner  -->
-      <section class="intro">
-        <h2 class="intro__heading">Réservez le menu qui vous convient</h2>
-        <p class="intro__text">
-          Découvrez des restaurants d'exception, sélectionnés par nos soins.
-        </p>
-        <button class="button">Explorer nos restaurants</button>
-      </section>
-
-      <!-- Bloc Fonctionnement -->
-      <section class="process">
-        <h2>Fonctionnement</h2>
-        <div class="process__capsule">
-          <div class="process__capsule__dot">1</div>
-          <i class="fa fa-mobile-alt"></i>
-          <span>Choisissez un restaurant</span>
+      <!-- Bloc Menu -->
+      <section class="menu">
+        <div class="menu__titre">
+          <h2>La palette du goût</h2>
+          <i class="far fa-heart"></i>
         </div>
 
-        <div class="process__capsule">
-          <div class="process__capsule__dot">2</div>
-          <i class="fa fa-list"></i>
-          <span>Composez votre menu</span>
+        <span class="menu__sous_titre">ENTRÉES</span>
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Fricassée d'escargot</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">Au piment d'Espelette</span>
+            <span class="font-bold">25€</span>
+          </div>
         </div>
 
-        <div class="process__capsule process__capsule-bg-purple">
-          <div class="process__capsule__dot">3</div>
-          <i class="fa fa-store"></i>
-          <span>Dégustez au restaurant</span>
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Foie gras de canard mi-cuit</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">Et ses copeaux de truffe noire</span>
+            <span class="font-bold">35€</span>
+          </div>
         </div>
-      </section>
 
-      <!-- Bloc Restaurants -->
-      <section class="grey-container">
-        <div class="restaurants">
-          <h2>Restaurants</h2>
-
-          <a href="">
-            <div class="restaurants__card">
-              <div class="restaurants__card--new">
-                <span>Nouveau</span>
-              </div>
-              <img
-                src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="food_plate"
-              />
-              <div class="restaurants__card--content">
-                <div>
-                  <h3>La Palette du Goût</h3>
-                  <span>Ménilmontant</span>
-                </div>
-                <i class="far fa-heart"></i>
-              </div>
-            </div>
-          </a>
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Oeuf au plat</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">Assaisonné à la truffe sur lit de caviar</span>
+            <span class="font-bold">20€</span>
+          </div>
         </div>
+
+        <span class="menu__sous_titre">PLATS</span>
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Filet de boeuf aux herbes</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">Accompagné de sa ribambelle de légumes</span>
+            <span class="font-bold">40€</span>
+          </div>
+        </div>
+
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Parmentier de queue de boeuf</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">À la truffe noire sur sa purée de panais</span>
+            <span class="font-bold">35€</span>
+          </div>
+        </div>
+
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Filet de Turbot</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">Aux agrumes</span>
+            <span class="font-bold">44€</span>
+          </div>
+        </div>
+
+        <span class="menu__sous_titre">DESSERTS</span>
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Paris-Brest</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">Revisité</span>
+            <span class="font-bold">18€</span>
+          </div>
+        </div>
+
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Macaron au chocolat d'exception</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">Et glace à la vanille de Madagascar</span>
+            <span class="font-bold">22€</span>
+          </div>
+        </div>
+
+        <div class="menu__capsule">
+          <span class="menu__capsule-titre">Mousse au chocolat</span>
+          <div class="menu__capsule-text">
+            <span class="menu__capsule-text--details">Au piment d'Espelette et à la truffe noire</span>
+            <span class="font-bold">23€</span>
+          </div>
+        </div>
+
+        <button class="button button-order">Commander</button>
       </section>
     </main>
 
@@ -107,15 +123,11 @@
         <img src="./assets/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" />
         <div>
           <i class="fas fa-utensils"></i>
-          <a class="footer__links footer__links-offset" href="#"
-            >Proposer un restaurant</a
-          >
+          <a class="footer__links footer__links-offset" href="#">Proposer un restaurant</a>
         </div>
         <div>
           <i class="fas fa-hands-helping"></i>
-          <a class="footer__links footer__links-offset" href="#"
-            >Devenir partenaire</a
-          >
+          <a class="footer__links footer__links-offset" href="#">Devenir partenaire</a>
         </div>
         <a class="footer__links" href="#">Mentions légales</a>
         <a class="footer__links" href="mailto:team@ohmyfood.fr">Contact</a>
