@@ -437,23 +437,56 @@ footer {
 
   &__capsule {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     background: white;
     border-radius: 15px;
-    padding: 0.8rem 0.8rem;
     @include shadow();
     margin-bottom: 0.8rem;
+    overflow: hidden;
+
+    &-text_container {
+      width: 100%;
+      padding: 0.8rem 0.8rem;
+    }
+
+    .tick {
+      background-color: $tertiary;
+      padding: 1.2rem;
+      margin-right: -4.3rem;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      border-radius: 0 15px 15px 0;
+      transition: all 0.3s;
+      i {
+        font-size: 30px;
+        color: white;
+        transition: all 0.4s 0.08s;
+        transform: rotate(0deg);
+      }
+    }
+
+    &:hover {
+      .tick {
+        margin-right: 0;
+      }
+      i {
+        transform: rotate(360deg);
+      }
+    }
+
     &-titre {
       font-weight: 600;
       font-size: 18px;
     }
+
     &-text {
       font-size: 14px;
       margin-top: 0.3rem;
       display: flex;
       justify-content: space-between;
       font-weight: 100;
+
       &--details {
         width: 85%;
         white-space: nowrap;
