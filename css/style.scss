@@ -468,7 +468,7 @@ footer {
 
     &:hover {
       .tick {
-        margin-right: 0;
+        margin-right: 0rem;
       }
       i {
         transform: rotate(360deg);
@@ -478,6 +478,8 @@ footer {
     &-titre {
       font-weight: 600;
       font-size: 18px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     &-text {

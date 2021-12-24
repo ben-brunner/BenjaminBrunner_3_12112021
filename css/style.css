@@ -924,7 +924,7 @@ footer .footer__links {
 }
 
 .menu__capsule:hover .tick {
-  margin-right: 0;
+  margin-right: 0rem;
 }
 
 .menu__capsule:hover i {
@@ -935,6 +935,8 @@ footer .footer__links {
 .menu__capsule-titre {
   font-weight: 600;
   font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .menu__capsule-text {
