@@ -896,6 +896,8 @@ footer .footer__links {
 .menu__capsule-text_container {
   width: 100%;
   padding: 0.8rem 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__capsule .tick {
@@ -936,7 +938,6 @@ footer .footer__links {
   font-weight: 600;
   font-size: 18px;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .menu__capsule-text {

@@ -447,6 +447,8 @@ footer {
     &-text_container {
       width: 100%;
       padding: 0.8rem 0.8rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .tick {
@@ -479,7 +481,6 @@ footer {
       font-weight: 600;
       font-size: 18px;
       white-space: nowrap;
-      text-overflow: ellipsis;
     }
 
     &-text {
