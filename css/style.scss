@@ -360,8 +360,7 @@ footer {
   }
 }
 
-// PAGES RESTAURANTS
-
+// INDIVIDUAL RESTAURANTS PAGES
 .main--grey {
   background: $coal;
 }
@@ -427,6 +426,7 @@ footer {
     overflow: hidden;
     animation: fade-in 1.2s both;
 
+    // Fade-in effect on loading courses
     @for $i from 1 through 14 {
       &:nth-child(#{$i}) {
         animation-delay: #{($i) / 10}s;
@@ -451,6 +451,7 @@ footer {
       text-overflow: ellipsis;
     }
 
+    // Tick appears on hover
     .tick {
       background-color: $tertiary;
       padding: 1.2rem;
